@@ -117,6 +117,7 @@ ul.navbar-nav {
     list-style:none;
     font-family:Arial, Helvetica, sans-serif;
     color:white;
+    
 }
 
 li.recipetitle {
@@ -151,6 +152,7 @@ li {
     font-size:20px;
     margin: 2px;
     list-style: none;
+
 }
 
 li.aboutnav {
