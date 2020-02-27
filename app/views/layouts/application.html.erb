@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RecipeDb</title>
+
+    <title> Glen's Recipes </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
   <nav class="navbar navbar-toggleable-md navbar-light bg-faded"> 
 
-  <%= link_to "Recipe App", root_path, class: 'navbar-brand' %>
+  <%= link_to "Recipes", root_path, class: 'navbar-brand' %>
 
   <div class="collapse navbar-collapse" id="navbarNav">
 
     <ul class="navbar-nav navbar-right">
 
-      <li><%= link_to "About", pages_about_path %></li>
+      <li class="aboutnav"><%= link_to "About", pages_about_path %></li>
 
     </ul>
 

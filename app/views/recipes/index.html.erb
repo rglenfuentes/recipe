@@ -1,20 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Recipes</h1>
+<h1> Glen's Recipes</h1>
 <div class="row">
 <% @recipes.each do |recipe| %>
-<div class="col-md-4">
+  
+  <div class="col-md-4">
+
   <div class="recipe-box">
+
     <% if recipe.image? %>
+
       <%= link_to (image_tag recipe.image.url, class: "recipe-index"), recipe %>
+
     <% end %>
+
     <ul>
 
-        <li><%= recipe.title %></li>
+        <li class="recipetitle"><%= recipe.title %></li>
 
-        <li><%= recipe.description %></li>
+        <li class="recipedescription"><%= recipe.description %></li>
 
-        <li><%= link_to 'Show', recipe %> |
+        <li class="recipebox"><%= link_to 'Show', recipe %> |
 
         <%= link_to 'Edit', edit_recipe_path(recipe) %>
 
@@ -26,9 +32,12 @@
 
 </div><!--col-md-4-->
 
- <% end %>
-<br>
 
+ <% end %>
+
+<br>
+<div class="NewRecipe">
 <%= link_to 'New Recipe', new_recipe_path %>
+</div>
 
 

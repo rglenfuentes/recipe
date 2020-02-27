@@ -10,6 +10,7 @@
       </ul>
     </div>
   <% end %>
+
   <div class="form-group">
 
   <%= form.file_field :image %>
@@ -22,9 +23,9 @@
 
       Remove Image
 
-  <% end %>  
-  </div>
-  
+  <% end %>
+
+</div>
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
@@ -37,7 +38,7 @@
 
   <h3>Add Ingredients</h3>
   <%= form.fields_for :ingredients do |ingredient| %>
-  <%= render 'ingredients_fields', f: ingredient %> 
+  <%= render 'ingredient_fields', f: ingredient %> 
   <% end %>
   <div class="links">
   <%= link_to_add_association 'Add Ingredient', form, :ingredients %>
