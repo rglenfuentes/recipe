@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'cocoon'
 
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 
 group :production do 
   gem 'pg'
